@@ -1,0 +1,44 @@
+/* CSS RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DIN Pro";
+
+}
+
+@font-face {
+    font-family: "DIN Pro" ;
+    src: url("./fonts/DINPro-CondensedLight.woff2") format("woff2");
+    font-style: normal;
+}
+
+
+/* NAVBAR */
+
+.container{
+    padding: 20px 20px;
+    position: absolute;
+}
+
+
+.logo_text{
+    font-size: 22px;
+}
+
+.logo_text ul{
+    list-style: none;
+    cursor: pointer;
+    color: #aaa;
+    float: right;
+    position: relative;
+}
+
+.logo_text ul li{
+    margin: 10px 0;
+}
+
+.logo_text ul li:hover{
+    color: black;
+}
+
