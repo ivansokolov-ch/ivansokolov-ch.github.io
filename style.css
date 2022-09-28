@@ -9,7 +9,7 @@
 
 @font-face {
     font-family: "DIN Pro" ;
-    src: url("./fonts/DINPro-CondensedLight.woff2") format("woff2");
+    src: url("./fonts/DINPro.woff2") format("woff2");
     font-style: normal;
 }
 
@@ -23,7 +23,7 @@
 
 
 .logo_text{
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .logo_text ul{
