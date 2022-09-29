@@ -24,6 +24,106 @@ html{
     color: #aaa;
 }
 
+/* INDEX CSS */
+@media screen and (max-width: 768px){
+    nav{
+        border: 1px solid red;
+        display: none;
+    }
+
+    .navbar_mobile{
+        display: block;
+        padding: 20px 20px;
+    }
+
+    .navbar_mobile img{
+        width: 150px;
+    }
+
+    article{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .article_mobile_second{
+        display: none;
+    }
+
+    .container_info_mobile{
+        margin-top: 0 !important;
+        position: relative !important; 
+        top: 3rem !important;
+        align-self: center;
+    }
+
+    .container_mobile_image_third{
+        width: 90% !important;
+        align-self: center;
+        margin-top: 10rem;
+    }
+
+    
+    
+    .article_mobile_third{
+        margin-top: 0 !important;
+    }
+
+    .article_mobile_fourth{
+        display: block;
+        margin-right: 30px;
+    }
+
+    .article_mobile_fifth{
+        margin-left: 30px;
+    }
+
+    .container_mobile_sixth{
+        display: block;
+        margin-right: 30px;
+    }
+
+    .article_mobile_seventh{
+        margin-left: 30px ;
+
+    }
+
+
+    .container_img img{
+        width: 60% !important;
+    }
+
+    .container_text{
+        width: 70%;
+        align-self: center; 
+    }
+
+    .container_img{
+        width: 100%;
+    }
+
+    .mobile_image_photo img{
+        width: 85% !important;
+        margin-top: 10rem;
+    }
+
+
+    .mobile_about_text{
+        width: 90% !important;
+        align-items: center;
+    }
+
+    .photo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .photo img{
+        margin: 20px;
+    }
+
+}
+
 
 /* PAGES CSS */
 @media screen and (max-width: 768px){
@@ -36,7 +136,7 @@ html{
     }
 
     section{
-        margin-top: 0;
+        margin-top: 0 !important;
     }
 
     .mobile_section{
@@ -58,11 +158,9 @@ html{
         margin-top: 50px;
     }
 
-    .container_img img{
-        width: 350px;
+    .mobile_container img{
+        width: 90% !important;
     }
-
-    
 
     .img_dry{
         width: 100% !important;

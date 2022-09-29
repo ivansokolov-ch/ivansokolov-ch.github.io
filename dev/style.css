@@ -25,6 +25,11 @@ html{
     color: #aaa;
 }
 
+/* NAVBAR + SECTION */
+.navbar_mobile{
+display: none;
+}
+
 
 
 /* NAVBAR + SECTION */
