@@ -1,0 +1,107 @@
+/* CSS RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DIN Pro";
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: "DIN Pro" ;
+    src: url("./fonts/DINPro.woff2") format("woff2");
+    font-style: normal;
+}
+
+.primary_text {
+    font-weight: 900;
+}
+
+.primary_color{
+    color: #aaa;
+}
+
+
+
+/* NAVBAR + SECTION */
+
+article{
+    display: flex;
+}
+
+.container_text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+}
+
+ul{
+    font-size: 22px;
+    list-style: none;
+    cursor: pointer;
+    color: #aaa;
+}
+
+ul li{
+    text-align: end;
+    font-size: .875rem;
+    margin: 10px 0;
+    user-select: none;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #aaa;
+}
+
+ul li a:hover{
+    color: black;
+}
+
+.container_img {
+    width: 50%;
+}
+.container_img img {
+    width: 60%;
+}
+
+.container_info {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+/* ABOUT SECTION */
+
+section{
+    margin-top: 20%;
+}
+
+.photo img{
+    margin: 100px 40px;
+}
+
+
+
+/* FOOTER */
+
+
+
+
+
+
+
+
+
