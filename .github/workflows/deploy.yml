@@ -1,0 +1,25 @@
+name: Deploy
+
+on:
+  push:
+    branches: [ dev ] 
+
+jobs:
+  copy:
+    name: Deploy to main branch in dev directory
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: copy
+        env:
+          TARGET_BRANCH: 'main'
+        run: |
+          rsync -av ./* tmp/ --exclude .git
+          git config --global user.name 'GitHub Action'
+          git config --global user.email 'action@github.com'
+          git fetch                         # fetch branches
+          git checkout $TARGET_BRANCH       # checkout to your branch
+          mv tmp/ dev/  
+          git add -A
+          git diff-index --quiet HEAD ||  git commit -am "deploy files"  # commit to the repository (ignore if no modification)
+          git push origin $TARGET_BRANCH # push to remote branch
