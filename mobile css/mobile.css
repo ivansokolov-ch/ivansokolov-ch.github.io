@@ -68,6 +68,15 @@ html{
         width: 100% !important;
     }
 
+
+    .section_dry{
+        margin-left: 0 !important;
+    }
+
+    .section_dry img{
+        width: 90% !important;
+    }
+
     footer{
         display: none !important;
     }
