@@ -19,42 +19,36 @@ const text_third_standard = document.querySelector("#third");
 console.log(text_second_standard);
 
 radio1.addEventListener("click", () => {
-  // img_standard.src = img1.src;
   text_standard.innerHTML = "Fabri Fibra";
   text_second_standard.innerHTML = "Caos Tour - 2022";
   text_third_standard.innerHTML = "Fotografia";
 });
 
 radio2.addEventListener("click", () => {
-  // img_standard.src = img2.src;
   text_standard.innerHTML = "Drytech";
   text_second_standard.innerHTML = "ADV";
   text_third_standard.innerHTML = "Regia - Montaggio";
 });
 
 radio3.addEventListener("click", () => {
-  // img_standard.src = img3.src;
   text_standard.innerHTML = "Fashion";
   text_second_standard.innerHTML = "";
   text_third_standard.innerHTML = "Fotografia";
 });
 
 radio4.addEventListener("click", () => {
-  // img_standard.src = img4.src;
   text_standard.innerHTML = "Anagrafe";
   text_second_standard.innerHTML = "";
   text_third_standard.innerHTML = "Direzione Artistica";
 });
 
 radio5.addEventListener("click", () => {
-  // img_standard.src = img5.src;
   text_standard.innerHTML = "Moda";
   text_second_standard.innerHTML = "";
   text_third_standard.innerHTML = "Fotografia";
 });
 
 radio6.addEventListener("click", () => {
-  // img_standard.src = img6.src;
   text_standard.innerHTML = "Alpen Group";
   text_second_standard.innerHTML = "";
   text_third_standard.innerHTML = "Fotografia - Video";
