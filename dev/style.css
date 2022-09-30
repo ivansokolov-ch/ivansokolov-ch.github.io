@@ -52,7 +52,7 @@ nav {
 }
 
 ul{
-    font-size: 22px;
+    font-size: 1.375rem;
     list-style: none;
     cursor: pointer;
     color: #aaa;
@@ -61,7 +61,7 @@ ul{
 ul li{
     text-align: end;
     font-size: .875rem;
-    margin: 10px 0;
+    margin: .625rem 0;
     user-select: none;
 }
 
@@ -90,8 +90,16 @@ ul li a:hover{
 
 /* ABOUT SECTION */
 
+#about{
+    margin-top: 15rem !important;
+}
+
 section{
-    margin-top: 20%;
+    margin-top: 5rem !important;
+}
+
+.desktop_section{
+    margin-top: 15rem !important;
 }
 
 .photo img{
