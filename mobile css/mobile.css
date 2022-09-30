@@ -20,6 +20,10 @@ html{
     font-weight: 900;
 }
 
+.secondary_text{
+    font-weight: 600;
+}
+
 .primary_color{
     color: #aaa;
 }
@@ -27,17 +31,16 @@ html{
 /* INDEX CSS */
 @media screen and (max-width: 768px){
     nav{
-        border: 1px solid red;
         display: none;
     }
 
     .navbar_mobile{
         display: block;
-        padding: 20px 20px;
+        padding: 1.25rem 1.25rem;
     }
 
     .navbar_mobile img{
-        width: 150px;
+        width: 9.375rem;
     }
 
     article{
@@ -63,27 +66,26 @@ html{
     }
 
     
-    
     .article_mobile_third{
         margin-top: 0 !important;
     }
 
     .article_mobile_fourth{
         display: block;
-        margin-right: 30px;
+        margin-right: 1.875rem;
     }
 
     .article_mobile_fifth{
-        margin-left: 30px;
+        margin-left: 1.875rem;
     }
 
     .container_mobile_sixth{
         display: block;
-        margin-right: 30px;
+        margin-right: 1.875rem;
     }
 
     .article_mobile_seventh{
-        margin-left: 30px ;
+        margin-left: 1.875rem ;
 
     }
 
@@ -119,20 +121,27 @@ html{
     }
 
     .photo img{
-        margin: 20px;
+        margin: 1.25rem;
     }
 
+    #about{
+        margin-top: 0 !important;
+    }
 }
 
 
 /* PAGES CSS */
 @media screen and (max-width: 768px){
     nav img{
-        width: 130px;
+        width: 8.125rem;
     }
 
     .mobile_text{
         width: 80% !important;
+    }
+
+    .img_fibra{
+        width: 90%;
     }
 
     section{
@@ -146,8 +155,8 @@ html{
     
     .container_info{
         width: 100%;
-        margin-left: 40px;
-        margin-top: 40px;
+        margin-left: 2.5rem;
+        margin-top: 2.5rem;
     }
 
     .mobile_container{
@@ -155,7 +164,7 @@ html{
         justify-content: center !important;
         top: 0 !important;
         margin-right: 0 !important;
-        margin-top: 50px;
+        margin-top: 3.125rem;
     }
 
     .mobile_container img{
@@ -166,6 +175,9 @@ html{
         width: 100% !important;
     }
 
+    .desktop_section{
+        margin-top: 0 !important;
+    }
 
     .section_dry{
         margin-left: 0 !important;
