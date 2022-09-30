@@ -190,4 +190,28 @@ html{
     footer{
         display: none !important;
     }
+
 }
+
+/* ARROW */
+
+@media screen and (max-width: 768px){
+
+    .arrow_left{
+        display: inline-block;
+        margin-top: 10px;
+        margin-left: 40px;
+    }
+
+    .arrow_up{
+        display: inline-block;
+        width: 100%;
+        margin-top: 30px;
+    }
+    .arrow a img{
+        float: right;
+        margin-right: 20px;
+    }
+
+}
+

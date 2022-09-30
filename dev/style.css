@@ -114,11 +114,13 @@ section{
 
 /* FOOTER */
 
+/* ARROW */
 
+.arrow_up{
+    display: none;
+}
 
-
-
-
-
-
+.arrow_left{
+    display: none;
+}
 
