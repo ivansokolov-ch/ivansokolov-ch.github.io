@@ -46,6 +46,7 @@ html{
     article{
         display: flex;
         flex-direction: column-reverse;
+        height: auto !important;
     }
 
     .article_mobile_second{

@@ -18,7 +18,7 @@
     <div class="navbar_mobile">
         <img src="./img/logo.png" alt="logo">
     </div>
-    <article style="padding: 20px 20px;">
+    <article style="padding: 20px 20px; height: 100vh;">
         <div class="container_text">
             <!-- NAVBAR -->
             <nav>
@@ -37,17 +37,25 @@
             </nav>
 
             <div class="container_info">
-                <h2 class="primary_text">Fabri Fibra</h2>
-                <h2 class="primary_text">Caos Tour - 2022</h2>
+                <h2 id="first" class="primary_text">Fabri Fibra</h2>
+                <h2 id="second" class="primary_text">Caos Tour - 2022</h2>
                 <hr>
-                <p style="align-self: flex-end;" class="primary_color">Fotografia</p>
+                <p id="third" style="align-self: flex-end;" class="primary_color">Fotografia</p>
+                <!-- SLIDER -->
+                <div class="slides">
+                    <input checked type="radio" name="radio_btn" id="radio1">
+                    <input type="radio" name="radio_btn" id="radio2">
+                    <input type="radio" name="radio_btn" id="radio3">
+                    <input type="radio" name="radio_btn" id="radio4">
+                    <input type="radio" name="radio_btn" id="radio5">
+                    <input type="radio" name="radio_btn" id="radio6">
+                </div>
             </div>
-
         </div>
 
         <div class="container_img">
             <a href="./pages/fibra.html">
-                <img alt="fibra" src="./img/11.jpg" />
+                <img id="img_standard" alt="fibra" src="./img/11.jpg" />
             </a>
         </div>
     </article>
@@ -56,7 +64,7 @@
     <article class="article_mobile_second" id="project" style="margin-top: 8rem;">
         <div class="container_img">
             <a style="display: flex; justify-content: flex-end;" href="./pages/fibra.html">
-                <img alt="fibra" src="./img/11.jpg" />
+                <img id="img1" alt="fibra" src="./img/11.jpg" />
             </a>
         </div>
 
@@ -82,7 +90,7 @@
         </div>
 
         <a class="container_mobile_image_third" href="./pages/drytech.html" style="width: 50%">
-            <img style="width: 100%" alt="adv" src="./img//drytech/drytech3.png" />
+            <img id="img2" style="width: 100%" alt="adv" src="./img//drytech/drytech3.png" />
         </a>
     </article>
 
@@ -90,7 +98,7 @@
     <article class="article_mobile_fourth" style="margin-top: 8rem;">
         <div class="container_img">
             <a href="./pages/fashion.html" style="display: flex; justify-content: flex-end;">
-                <img alt="fashion" src="./img/fashion/fashion4.jpg" />
+                <img id="img3" alt="fashion" src="./img/fashion/fashion4.jpg" />
             </a>
         </div>
 
@@ -115,14 +123,14 @@
         </div>
 
         <div style="display: flex;" class="container_img">
-            <img alt="anagrafe" src="./img/anagrafe/anagrafe.png" />
+            <img id="img4" alt="anagrafe" src="./img/anagrafe/anagrafe.png" />
         </div>
     </article>
 
     <!-- SIXTH ARTICLE-->
     <article class="container_mobile_sixth" style="margin-top: 8rem;">
         <div style="display: flex; justify-content: flex-end;" class="container_img">
-            <img alt="moda" src="./img/moda/moda1.png" />
+            <img id="img5" alt="moda" src="./img/moda/moda1.png" />
         </div>
 
         <div style="width: 50%; display: flex; align-items: center; justify-content: center;">
@@ -146,7 +154,7 @@
         </div>
 
         <div style="display: flex;" class="container_img">
-            <img alt="alpen" src="./img/alpen-group/alpen.jpg" />
+            <img id="img6" alt="alpen" src="./img/alpen-group/alpen.jpg" />
         </div>
     </article>
 
