@@ -6,6 +6,7 @@ const radio5 = document.querySelector("#radio5");
 const radio6 = document.querySelector("#radio6");
 
 const img_standard = document.querySelector("#img_standard");
+const a_standard = document.querySelector("#a_standard");
 const img2 = document.querySelector("#img2");
 const img3 = document.querySelector("#img3");
 const img4 = document.querySelector("#img4");
@@ -56,11 +57,13 @@ radio6.addEventListener("click", () => {
 
 Array.from(document.getElementsByClassName("radiobtn")).forEach((item) =>
   item.addEventListener("click", (_) => {
+    a_standard.href = (
+      document.querySelector(`#a${item.id[5]}`) || { href: "#" }
+    ).href;
     img_standard.classList.remove("fade");
     setTimeout(() => {
       img_standard.classList.add("fade");
       setTimeout(() => {
-        console.log(window.img);
         img_standard.src = document.querySelector(`#img${item.id[5]}`).src;
       }, 400);
     }, 50);

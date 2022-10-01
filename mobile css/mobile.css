@@ -46,7 +46,7 @@ html{
     article{
         display: flex;
         flex-direction: column-reverse;
-        height: auto !important;
+        height: 60vh !important;
     }
 
     .article_mobile_second{
@@ -213,6 +213,12 @@ html{
         float: right;
         margin-right: 20px;
     }
+
+    .arrow_desktop{
+        display: none;
+    }
+
+
 
 }
 
