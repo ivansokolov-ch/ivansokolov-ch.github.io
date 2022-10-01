@@ -226,3 +226,24 @@ html{
 
 }
 
+/* TABLET */
+
+@media screen and (min-width: 100px) and (max-width: 853px){
+
+    .mod_mobile{
+        height: auto !important;
+    }
+    
+
+    .photo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .photo img{
+        margin: 40px 0px;
+    }
+}
+
+
