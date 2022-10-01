@@ -46,7 +46,11 @@ html{
     article{
         display: flex;
         flex-direction: column-reverse;
-        height: 60vh !important;
+        height: auto !important;
+    }
+
+    .mod_mobile{
+        height: 60vh !important; 
     }
 
     .article_mobile_second{
@@ -209,7 +213,7 @@ html{
         width: 100%;
         margin-top: 30px;
     }
-    .arrow a img{
+    .arrow_up a img{
         float: right;
         margin-right: 20px;
     }
