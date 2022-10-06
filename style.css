@@ -22,7 +22,7 @@ html{
 }
 
 .primary_color{
-    color: #aaa;
+    color: black;
 }
 
 input[type="radio"] {
@@ -32,12 +32,12 @@ input[type="radio"] {
     appearance: none;
     /* create custom radiobutton appearance */
     display: inline-block;
-    width: 14px;
-    height: 14px;
+    width: 10px;
+    height: 10px;
     padding: 0px;
     /* background-color only for content */
     background-clip: content-box;
-    border: 2px solid #707070;
+    border: 1px solid #707070;
     background-color: #fff;
     border-radius: 50%;
   }
@@ -53,6 +53,9 @@ input[type="radio"] {
 
   .slides{
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
   }
 
 /* NAVBAR + SECTION */
