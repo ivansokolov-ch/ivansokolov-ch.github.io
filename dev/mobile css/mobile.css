@@ -24,10 +24,6 @@ html{
     font-weight: 600;
 }
 
-.primary_color{
-    color: #aaa;
-}
-
 /* INDEX CSS */
 @media screen and (max-width: 768px){
     nav{
