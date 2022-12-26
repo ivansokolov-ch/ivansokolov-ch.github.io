@@ -67,7 +67,7 @@ display: none;
 
 /* NAVBAR + SECTION */
 
-article{
+article,main {
     justify-content: center;
     display: flex;
     margin-bottom: 327px;
