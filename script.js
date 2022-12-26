@@ -2,6 +2,13 @@ const url = "http://localhost:8080";
 const apiUrl = "https://cms.ivansokolov.ch";
 const apiReqUrl = "https://req.ivansokolov.ch";
 
+let locale = navigator.language || navigator.userLanguage;
+if (locale.includes("it")) {
+  locale = "it";
+} else {
+  locale = "en";
+}
+
 const img_standard = document.querySelector("#img_standard");
 const a_standard = document.querySelector("#a_standard");
 const text_standard = document.querySelector("#first");
@@ -19,7 +26,7 @@ const fillArticle = (e, i) => {
   const article = document.createElement("article");
   if (i % 2 === 0) {
     article.innerHTML = `<div class="container_img">
-            <a href="${url}/project?id=${e.id}" title="${e.attributes.Title}">
+            <a href="${url}/${locale}/project?id=${e.id}" title="${e.attributes.Title}">
                 <img alt="${e.attributes.Title}" src="${strapiUrlToExternalUrl(e.attributes.cover.data.attributes.formats.large.url)}"/>
             </a>
         </div>
@@ -42,7 +49,7 @@ const fillArticle = (e, i) => {
             </div>
         </div>
         <div class="container_img" style="width: 49.8%;">
-            <a href="${url}/project?id=${e.id}" title="${e.attributes.Title}">
+            <a href="${url}/${locale}/project?id=${e.id}" title="${e.attributes.Title}">
                 <img alt="${e.attributes.Title}" src="${strapiUrlToExternalUrl(e.attributes.cover.data.attributes.formats.large.url)}" />
             </a>
         </div>`;
@@ -53,7 +60,7 @@ const fillArticle = (e, i) => {
 
 const projects = new XMLHttpRequest();
 projects.overrideMimeType("application/json");
-projects.open("GET", `${apiUrl}/api/projects?populate[0]=cover&sort[0]=id`);
+projects.open("GET", `${apiUrl}/api/projects?populate[0]=cover&sort[0]=id&locale=${locale}`);
 projects.onreadystatechange = () => {
   if (projects.readyState === 4 && projects.status === 200) {
     const data = JSON.parse(projects.responseText).data;
@@ -66,7 +73,7 @@ projects.onreadystatechange = () => {
       document.querySelector(`#radio${i}`).addEventListener("click", () => {
         text_standard.innerHTML = data[i].attributes.Title;
         text_third_standard.innerHTML = data[i].attributes.subtitle;
-        a_standard.href = `${url}/project?id=${data[i].id}`;
+        a_standard.href = `${url}/${locale}/project?id=${data[i].id}`;
         img_standard.classList.remove("fade");
         setTimeout(() => {
           img_standard.classList.add("fade");
@@ -100,7 +107,7 @@ emailInput.addEventListener("input", (e) => {
     emailAnswer.style.color = 'black';
   } else {
     emailSubmit.style.opacity = ".3";
-    emailAnswer.innerHTML = "Email not valid";
+    emailAnswer.innerHTML = locale==="en"?"Email not valid":"Email non valida";
     emailAnswer.style.color = 'red';
   }
 })
@@ -114,7 +121,7 @@ emailSubmit.addEventListener("click", () => {
     const data = { email: emailInput.value };
     emailRequest.onreadystatechange = () => {
       if (emailRequest.readyState === 4 && emailRequest.status === 200) {
-        emailAnswer.innerHTML = "You will receive the portfolio in you email box.";
+        emailAnswer.innerHTML = locale==="en"?"You will receive the portfolio in you email box.":"Riceverai il portfolio nella tua casella di posta";
       }
     };
     emailRequest.send(JSON.stringify(data));
