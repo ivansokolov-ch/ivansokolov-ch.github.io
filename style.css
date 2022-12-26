@@ -128,9 +128,17 @@ ul li a:hover{
     width: 50%;
 }
 
-.contact:hover{
+.contact:hover {
     background-color: black;
     color: #fff;
+}
+.contact a {
+    text-decoration: none;
+    color: #000000;
+}
+.contact:hover a {
+    text-decoration: none;
+    color: #ffffff;
 }
 
 
