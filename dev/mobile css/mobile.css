@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DIN Pro";
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: "DIN Pro" ;
+    src: url("./fonts/DINPro.woff2") format("woff2");
+    font-style: normal;
+}
+
+.primary_text {
+    font-weight: 900;
+}
+
+.secondary_text{
+    font-weight: 600;
+}
+
+/* INDEX CSS */
+@media screen and (max-width: 768px){
+    nav{
+        display: none;
+    }
+
+    .navbar_mobile{
+        display: block;
+        padding: 1.25rem 1.25rem;
+    }
+
+    .navbar_mobile img{
+        width: 9.375rem;
+    }
+
+    article{
+        display: flex;
+        flex-direction: column-reverse;
+        height: auto !important;
+    }
+
+    .mod_mobile{
+        height: 60vh !important; 
+    }
+
+    .article_mobile_second{
+        display: none;
+    }
+
+    .container_info_mobile{
+        margin-top: 0 !important;
+        position: relative !important; 
+        top: 3rem !important;
+        align-self: center;
+    }
+
+    .container_mobile_image_third{
+        width: 90% !important;
+        align-self: center;
+        margin-top: 10rem;
+    }
+
+    
+    .article_mobile_third{
+        margin-top: 0 !important;
+    }
+
+    .article_mobile_fourth{
+        display: block;
+        margin-right: 1.875rem;
+    }
+
+    .article_mobile_fifth{
+        margin-left: 1.875rem;
+    }
+
+    .container_mobile_sixth{
+        display: block;
+        margin-right: 1.875rem;
+    }
+
+    .article_mobile_seventh{
+        margin-left: 1.875rem ;
+
+    }
+
+
+    .container_img img{
+        width: 60% !important;
+    }
+
+    .container_text{
+        width: 70%;
+        align-self: center; 
+    }
+
+    .container_img{
+        width: 100%;
+    }
+
+    .mobile_image_photo img{
+        width: 85% !important;
+        margin-top: 10rem;
+    }
+
+
+    .mobile_about_text{
+        width: 90% !important;
+        align-items: center;
+    }
+
+    .photo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .photo img{
+        margin: 1.25rem;
+    }
+
+    #about{
+        margin-top: 0 !important;
+    }
+}
+
+
+/* PAGES CSS */
+@media screen and (max-width: 768px){
+    nav img{
+        width: 8.125rem;
+    }
+
+    .mobile_text{
+        width: 80% !important;
+    }
+
+    .img_fibra{
+        width: 90%;
+    }
+
+    section{
+        margin-top: 0 !important;
+    }
+
+    .mobile_section{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .container_info{
+        width: 100%;
+        margin-left: 2.5rem;
+        margin-top: 2.5rem;
+    }
+
+    .mobile_container{
+        align-items: center !important;
+        justify-content: center !important;
+        top: 0 !important;
+        margin-right: 0 !important;
+        margin-top: 3.125rem;
+    }
+
+    .mobile_container img{
+        width: 90% !important;
+    }
+
+    .img_dry{
+        width: 100% !important;
+    }
+
+    .desktop_section{
+        margin-top: 0 !important;
+    }
+
+    .section_dry{
+        margin-left: 0 !important;
+    }
+
+    .section_dry img{
+        width: 90% !important;
+    }
+
+    footer{
+        display: none !important;
+    }
+
+}
+
+/* ARROW */
+
+@media screen and (max-width: 768px){
+
+    .arrow_left{
+        display: inline-block;
+        margin-top: 10px;
+        margin-left: 40px;
+    }
+
+    .arrow_up{
+        display: inline-block;
+        width: 100%;
+        margin-top: 30px;
+    }
+    .arrow_up a img{
+        float: right;
+        margin-right: 20px;
+    }
+
+    .arrow_desktop{
+        display: none;
+    }
+
+
+
+}
+
+/* TABLET */
+
+@media screen and (min-width: 100px) and (max-width: 853px){
+
+    .mod_mobile{
+        height: auto !important;
+    }
+    
+
+    .photo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .photo img{
+        margin: 40px 0px;
+    }
+}
+
+
