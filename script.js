@@ -2,12 +2,8 @@ const url = "http://localhost:8080";
 const apiUrl = "https://cms.ivansokolov.ch";
 const apiReqUrl = "https://req.ivansokolov.ch";
 
-let locale = navigator.language || navigator.userLanguage;
-if (locale.includes("it")) {
-  locale = "it";
-} else {
-  locale = "en";
-}
+const t = window.location.href;
+const locale = t.substring(t.indexOf(url)+url.length+1,t.indexOf(url)+url.length+3)
 
 const img_standard = document.querySelector("#img_standard");
 const a_standard = document.querySelector("#a_standard");
@@ -118,7 +114,7 @@ emailSubmit.addEventListener("click", () => {
     emailRequest.overrideMimeType("application/json");
     emailRequest.open("POST", `${apiReqUrl}/send`);
     emailRequest.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
-    const data = { email: emailInput.value };
+    const data = { email: emailInput.value, locale };
     emailRequest.onreadystatechange = () => {
       if (emailRequest.readyState === 4 && emailRequest.status === 200) {
         emailAnswer.innerHTML = locale==="en"?"You will receive the portfolio in you email box.":"Riceverai il portfolio nella tua casella di posta";
