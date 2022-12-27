@@ -74,7 +74,7 @@ article,main {
 }
 
 .container_text {
-    width: 33.2%;
+    width: 16.6vw;
     display: flex;
     justify-content: flex-end;
 
@@ -125,7 +125,7 @@ ul li a:hover{
     align-self: center;
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 100%;
 }
 
 .contact:hover {
