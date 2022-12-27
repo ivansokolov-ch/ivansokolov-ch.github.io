@@ -12,50 +12,17 @@
 	<meta name="og:description" content="Ivan Sokolov è un regista e fotografo con sede in Svizzera. Si occupa principalmente di produzioni commerciali, musicali e aziendali.">
 	<meta name=”robots” content="index, follow">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <style>
-        @font-face {
-            font-family: 'dinpro';
-            src: url(font/DINPro.woff2);
-            font-weight: bold;
-        }
-        html, body {
-            height: 100%;
-            width: 100%;
-            min-width: 100%;
-            min-height: 100%;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-        }
-        header img {
-            width: 200px;
-        }
-        header .text {
-            float: right;
-            margin-left: 20px;
-            padding-top: 17px;
-        }
-        header .text p {
-            float: left;
-            font-family: 'dinpro';
-            font-weight: bold;
-        }
-    </style>
 </head>
-
 <body>
-<header>
-    <img src="img/logo-ivansokolov.png" alt="Logo Ivan Sokolov" />
-
-    <div class="text">
-        <p>Sito in costruzione :)</p>
-    </div>
-</header>
+<a title="Ivan Sokolov - English Website" href="en">Ivan Sokolov - English website</a>
+<a title="Ivan Sokolov - Sito Italiano" href="it">Ivan Sokolov - Sito italiano</a>
+<script type="text/javascript">
+  var userLang = navigator.language || navigator.userLanguage;
+  if (userLang.includes("it")) {
+    window.location.href = "https://ivansokolov.ch/it";
+  } else {
+    window.location.href = "https://ivansokolov.ch/en";
+  }
+</script>
 </body>
-
 </html>
