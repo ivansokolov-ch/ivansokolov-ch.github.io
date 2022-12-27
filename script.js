@@ -1,4 +1,4 @@
-const url = "http://localhost:8080";
+const url = "https://ivansokolov.ch";
 const apiUrl = "https://cms.ivansokolov.ch";
 const apiReqUrl = "https://req.ivansokolov.ch";
 
