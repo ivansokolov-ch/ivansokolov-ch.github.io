@@ -39,10 +39,49 @@ html{
         width: 9.375rem;
     }
 
-    article{
+    main{
         display: flex;
         flex-direction: column-reverse;
         height: auto !important;
+    }
+    main {
+        padding: 10px 15px 50px 15px!important;
+        margin: 0!important;
+    }
+    main .container_info {
+        margin-top: 15px;
+    }
+    main .container_text {
+        margin-right: 0!important;
+    }
+    main .container_info .slides {
+        margin-top: 15px;
+    }
+    article {
+        flex-direction: column;
+        padding: 0 15px;
+        margin-bottom: 100px;
+    }
+    article.mobileToReverse {
+        flex-direction: column-reverse;
+    }
+    article .container_text {
+        margin-right: 0!important;
+    }
+    article.horizontal .container_img,article.horizontal .container_img a img {
+        width: 100%!important;
+    }
+    article.vertical.odd .container_img {
+        align-self: end;
+        width: 60%;
+    }
+    article.vertical.odd .container_img img {
+        align-self: end;
+        width: 100%!important;
+    }
+    article.vertical.odd .container_text, article.vertical.odd .container_text .container_info {
+        align-self: start;
+        margin-left: 0!important;
     }
 
     .mod_mobile{
@@ -97,7 +136,7 @@ html{
 
     .container_text{
         width: 70%;
-        align-self: center; 
+        align-self: end;
     }
 
     .container_img{
@@ -127,6 +166,85 @@ html{
 
     #about{
         margin-top: 0 !important;
+    }
+    #about .container_img, #about .container_img img {
+        width: 100%!important;
+    }
+    #aboutTitle .container_text,
+    #aboutTitle .container_text .container_info,
+    #aboutDesc .container_text,
+    #aboutDesc .container_text .container_info {
+        margin-left: 0!important;
+        width: 100%;
+    }
+    #aboutDesc {
+        margin: 0 15px!important;
+        padding-left: 0!important;
+    }
+    #aboutDesc p {
+        width: 100%!important;
+    }
+    #aboutPhoto {
+        flex-direction: row;
+        margin: 56px 0!important;
+    }
+    #aboutPhoto .container_img {
+        width: calc(50% - 2px) !important;
+    }
+    #aboutPhoto .container_img img{
+        width: 100%!important;
+    }
+    #aboutPhoto .container_img:first-of-type {
+        margin-right: 4px;
+    }
+    #aboutPhoto hr {
+        display: none;
+    }
+
+    footer {
+        margin: 0 15px 100px 15px!important;
+    }
+    footer .contactHeader .container_text {
+        width: 66.6vw!important;
+    }
+    footer .container_info {
+        margin-left: 0!important;
+    }
+    footer div {
+        margin-bottom: 25px!important;
+    }
+    footer .contactBlocks {
+        display: block!important;
+    }
+    footer .contactBlocks .container_text {
+        width: 100%!important;
+        display: block!important;
+    }
+    footer .contactBlocks .contact {
+        width: calc(50% - 7.5px);
+        float: left;
+    }
+    footer .contactBlocks .contact.contact-right {
+        margin-left: 15px!important;
+    }
+    footer .contactBlocks hr {
+        display: none;
+    }
+    footer .contactBlocks .contact hr {
+        display: block;
+    }
+    footer .contactRequestPortfolio .container_text {
+        width: 66vw!important;
+    }
+    footer .contactRequestPortfolioInsert .container_text {
+        width: 100%!important;
+        flex-direction: column;
+    }
+    footer .contactRequestPortfolioInsert #portfolio-request-submit {
+        display: flex;
+        width: calc(33vw - 30px);
+        justify-self: end;
+        align-self: end;
     }
 }
 
@@ -188,10 +306,6 @@ html{
         width: 90% !important;
     }
 
-    footer{
-        display: none !important;
-    }
-
 }
 
 /* ARROW */
@@ -212,10 +326,6 @@ html{
     .arrow_up a img{
         float: right;
         margin-right: 20px;
-    }
-
-    .arrow_desktop{
-        display: none;
     }
 
 
@@ -242,4 +352,53 @@ html{
     }
 }
 
+
+@media screen and (max-width: 768px) {
+    .project .navbar_mobile a.arrow {
+        margin-top: 0!important;
+        position: fixed;
+        top: 100px;
+        left:15px;
+    }
+    .navbar_mobile a img {
+        width: 25vw!important;
+    }
+    .project .navbar_mobile a.arrow img {
+        width: 17vw!important;
+        margin-left: 8vw!important;
+    }
+
+    .project article {
+        margin-top: 50px!important;
+    }
+    .project article .container_text {
+        align-self: start;
+        width: 66vw;
+    }
+    .project article .container_text .container_info {
+        margin-left: 0;
+    }
+    .project header {
+        padding: 0 15px!important;
+    }
+    .project header p {
+        width: 100%!important;
+    }
+    .project section {
+        padding: 0 15px!important;
+        display: block!important;
+    }
+    .project section div {
+        padding: 0!important;
+        width: 100% !important;
+        display: block!important;
+    }
+    .project section img {
+        width: 100%!important;
+        position: relative!important;
+        left: 0!important;
+        top: 0!important;
+    }
+
+}
 

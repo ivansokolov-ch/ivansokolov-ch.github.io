@@ -12,10 +12,13 @@
     <title>Ivan Sokolov</title>
 </head>
 
-<body>
+<body class="project">
 <div id="fabri_fibra" class="navbar_mobile">
     <a href="../">
         <img src="../../img/logo.png" alt="logo">
+    </a>
+    <a href="../" title="home page" class="arrow">
+        <img src="../../img/arrow-left.png" alt="home page">
     </a>
 </div>
 
@@ -48,35 +51,9 @@
         palco, nel backstage, così come di creare brevi video riassuntivi dei suoi concerti.</p>
 </header>
 
-<!-- SECTION THREE -->
-<section class="mobile_section desktop_section" style="display: flex;">
-    <div style="width: 16.6%;"></div>
-    <div style="display: flex; justify-content: flex-end;" class="container_img mobile_container">
-        <img alt="fibra" src="../../img/fabri-fibra/fabri5.jpg"/>
-    </div>
-    <div style="width: 16.6%;"></div>
-    <div style="display: flex; justify-content: flex-end; position: relative; top: 13rem; margin-right: 20px;"
-         class="container_img mobile_container">
-        <img alt="fibra" src="../../img/fabri-fibra/fabri2.jpg"/>
-    </div>
-</section>
-
-<!-- SECTION FOUR -->
-<section class="mobile_section desktop_section" style="display: flex;">
-    <div style="width: 16.6%;"></div>
-    <div style="display: flex; justify-content: flex-end;" class="container_img mobile_container">
-        <img alt="fibra" src="../../img/fabri-fibra/fabri1.jpg"/>
-    </div>
-    <div style="width: 16.6%;"></div>
-    <div style="display: flex; justify-content: flex-end; position: relative; top: 13rem; margin-right: 20px;"
-         class="container_img mobile_container">
-        <img alt="fibra" src="../../img/fabri-fibra/fabri3.jpg"/>
-    </div>
-</section>
 <div style="clear: both;width: 100%; margin-top: 200px"></div>
 <footer id="contact">
-    <div style=" display: flex; margin-bottom: 200px;">
-        <div style="width: 16.6%;"></div>
+    <div class="contactHeader" style=" display: flex; margin-bottom: 200px;">
         <div class="container_text" style="justify-content: flex-start;">
             <div class="container_info">
                 <h2 class="primary_text">Contacts</h2>
@@ -85,8 +62,7 @@
             </div>
         </div>
     </div>
-    <div style=" display: flex; margin-bottom: 200px;">
-        <div style="width: 16.6%;"></div>
+    <div class="contactBlocks" style=" display: flex; margin-bottom: 200px;">
         <div class="container_text" style="justify-content: flex-start; width: 66.4%;">
             <div class="container_info contact">
                 <h2 class="primary_text">
@@ -94,7 +70,7 @@
                 <hr>
             </div>
             <hr style="padding: 1%; margin: 0; border: 0;">
-            <div class="container_info contact">
+            <div class="container_info contact contact-right">
                 <h2 class="primary_text">
                     <a href="tel:+41 76 244 07 67" title="phone number">Phone</a></h2>
                 <hr>
@@ -102,19 +78,18 @@
             <hr style="padding: 1%; margin: 0; border: 0;">
             <div class="container_info contact">
                 <h2 class="primary_text">
-                    <a href="https://www.instagram.com/ivan_sokolov_/" title="@ivan_sokolov_ - instagram">Instagram</a>
-                </h2>
+                    <a href="https://www.instagram.com/ivan_sokolov_/" title="@ivan_sokolov_ - instagram">Instagram</a></h2>
                 <hr>
             </div>
             <hr style="padding: 1%; margin: 0; border: 0;">
-            <div class="container_info contact">
+            <div class="container_info contact contact-right">
                 <h2 class="primary_text">Twitter</h2>
                 <hr>
             </div>
+            <div style="clear: both"></div>
         </div>
     </div>
-    <div style=" display: flex;">
-        <div style="width: 16.6%;"></div>
+    <div class="contactRequestPortfolio" style=" display: flex;">
         <div class="container_text" style="justify-content: flex-start; width: 33.2%;">
             <div class="container_info">
                 <h2 class="primary_text">Request portfolio</h2>
@@ -122,16 +97,14 @@
             </div>
         </div>
     </div>
-    <div style=" display: flex; margin-bottom: 200px;">
-        <div style="width: 16.6%;"></div>
+    <div class="contactRequestPortfolioInsert" style=" display: flex; margin-bottom: 200px;">
         <div class="container_text" style="justify-content: flex-start; width: 33.2%;">
             <div class="container_info">
                 <input id="portfolio-request-email" type="email" style="border: 0" placeholder="Type your mail here">
                 <hr style="margin-bottom: 10px; margin-top: 5px;">
                 <p id="portfolio-request-answer"></p>
             </div>
-            <img class="arrow_desktop" id="portfolio-request-submit" style="margin-left: 50px;opacity: .3"
-                 src="../../img/arrow-right.png" alt="arrow"/>
+            <img class="arrow_desktop" id="portfolio-request-submit" style="margin-left: 50px;opacity: .3" src="../../img/arrow-right.png" alt="arrow" />
         </div>
     </div>
 </footer>

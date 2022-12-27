@@ -68,7 +68,7 @@ display: none;
 /* NAVBAR + SECTION */
 
 article,main {
-    justify-content: center;
+    padding-left: 16.6vw;
     display: flex;
     margin-bottom: 327px;
 }
@@ -77,11 +77,10 @@ article,main {
     width: 16.6vw;
     display: flex;
     justify-content: flex-end;
-
 }
 
 .container_img {
-    width: 33.2%;
+    width: 33vw;
 }
 
 nav {
@@ -162,6 +161,10 @@ section{
 
 .mobile_section{
     margin-top: 5rem;
+}
+
+footer {
+    margin-left: 16.6%;
 }
 
 
