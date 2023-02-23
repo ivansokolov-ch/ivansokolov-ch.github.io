@@ -205,7 +205,11 @@ footer {
     }
 }
 
-a, a:link, a:hover, a:hover, a:visited {
+section a,
+section a:link,
+section a:hover,
+section a:hover,
+section a:visited {
     color: black;
     text-decoration: none;
 }
