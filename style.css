@@ -205,6 +205,11 @@ footer {
     }
 }
 
+article a,
+article a:link,
+article a:hover,
+article a:hover,
+article a:visited,
 section a,
 section a:link,
 section a:hover,
