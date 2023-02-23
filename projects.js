@@ -72,6 +72,10 @@ projects.onreadystatechange = () => {
       document.querySelector("main .slides").innerHTML += projectToRadio(i);
     }
     let elem = document.querySelector("main");
+    const b = document.createElement("div");
+    b.style.paddingTop = "90px";
+    elem.parentElement.insertBefore(b, elem.nextSibling);
+    elem = b;
     for (let i = 0; i < data.length; i++) {
       document.querySelector(`#radio${i}`).addEventListener("click", () => {
         text_standard.innerHTML = data[i].attributes.Title;
