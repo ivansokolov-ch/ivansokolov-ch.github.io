@@ -20,9 +20,17 @@ const fillArticle = (e, i) => {
         </div>
         <div class="container_text" style="margin-left: 16.6vw;">
             <div class="container_info">
-                <h2 class="primary_text">${e.attributes.Title}</h2>
+                <h2 class="primary_text">
+                    <a href="${url}/${locale}/project?id=${e.id}" title="${e.attributes.Title}">
+                        ${e.attributes.Title}
+                    </a>
+                </h2>
                 <hr>
-                <p style="align-self: flex-end;" class="primary_color">${e.attributes.subtitle}</p>
+                <p style="align-self: flex-end;" class="primary_color">
+                    <a href="${url}/${locale}/project?id=${e.id}" title="${e.attributes.Title}">
+                        ${e.attributes.subtitle}
+                    </a>
+                </p>
             </div>
         </div>`;
   } else {
@@ -31,10 +39,16 @@ const fillArticle = (e, i) => {
     article.innerHTML = `<div class="container_text" style="justify-content: flex-start;margin-right: 16vw;">
             <div class="container_info">
                 <h2 class="primary_text">
-                    ${e.attributes.Title}
+                    <a href="${url}/${locale}/project?id=${e.id}" title="${e.attributes.Title}">
+                        ${e.attributes.Title}
+                    </a>
                 </h2>
                 <hr>
-                <p style="align-self: flex-end;" class="primary_color">${e.attributes.subtitle}</p>
+                <p style="align-self: flex-end;" class="primary_color">
+                    <a href="${url}/${locale}/project?id=${e.id}" title="${e.attributes.Title}">
+                        ${e.attributes.subtitle}
+                    </a>
+                </p>
             </div>
         </div>
         <div class="container_img" style="width: 49.6vw">
