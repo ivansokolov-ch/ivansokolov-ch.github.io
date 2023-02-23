@@ -49,7 +49,7 @@ const fillArticle = (e, i) => {
 
 const projects = new XMLHttpRequest();
 projects.overrideMimeType("application/json");
-projects.open("GET", `${apiUrl}/api/projects?populate[0]=cover&sort[0]=id&locale=${locale}`);
+projects.open("GET", `${apiUrl}/api/projects?populate[0]=cover&sort[0]=weight&locale=${locale}`);
 projects.onreadystatechange = () => {
   if (projects.readyState === 4 && projects.status === 200) {
     const data = JSON.parse(projects.responseText).data;
